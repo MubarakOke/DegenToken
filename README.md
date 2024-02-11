@@ -1,41 +1,38 @@
 # Project Title
 
-Simple overview of use/purpose.
+License Contract
 
 ## Description
 
-An in-depth paragraph about your project and overview of use.
+This is an ERC20 token contract, It allows creation of tokens, where the contract owner only has the ability to mint, any user can transfer and burn the token
+
+    - State: Owner state, storing the contract owner address
+    - Modifier: Utilizes 2 modifiers, onlyOwner and hasTokens modifiers, onlyOwner modifier checks the msg.sender is the owner of the contract and hasToken Modifier checks whether the address has enough token
+    - Functions: the contract include function for mininting, transfering and burning of the token
+
 
 ## Getting Started
 
-### Installing
-
-* How/where to download your program
-* Any modifications needed to be made to files/folders
-
 ### Executing program
+    - clone the project from github
+    - cd "project director"
+    - To deploy, run: npx hardhat run --network fuji .\scripts\deploy.js
+    - To verify contract, run: npx hardhat verify --network fuji "contract address"
 
-* How to run the program
-* Step-by-step bullets
-```
-code blocks for commands
-```
 
-## Help
-
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
-```
+    For ease in executing the smart contract, the address can be copied and use in remix environment to interact with different functions in the contract
 
 ## Authors
 
 Contributors names and contact info
 
-ex. Dominique Pizzie  
-ex. [@DomPizzie](https://twitter.com/dompizzie)
+ex. Okeola Mubarak  
+ex. [@Mubie_X](https://twitter.com/mubie_X)
 
 
 ## License
 
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
+This project is licensed under the MIT License 
+
+## Address
+0xd1DF10a1fc494E215A24268F74e8d9903602C104
